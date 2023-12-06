@@ -1,0 +1,384 @@
+/* PRODUCT PAGE STYLE */
+h1 {
+  font-size: 2rem;
+}
+
+.product-page {
+  width: fit-content;
+  padding-top: 20px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.product-page img {
+  border: 1px solid black;
+}
+
+/* PRODUK IMAGE */
+.product-img,
+.product-title-side {
+  padding-top: 120px;
+}
+
+.product-img {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.img-side {
+  width: 15%;
+  margin-right: 20px;
+}
+.thumbnail {
+  margin-bottom: 10px;
+  background-size: cover;
+}
+.thumb {
+  cursor: pointer;
+}
+
+.main-img {
+  width: 80%;
+}
+.main2 {
+  display: none;
+}
+
+/* SLIIDER CONTROL STYLE */
+.slider-controls {
+  display: none;
+}
+
+/* JUDUL PRODUK */
+.price-1 {
+  color: red;
+  text-decoration: line-through;
+}
+
+/* DESCRIPTION */
+.product-desc {
+  margin-top: 75px;
+  max-width: 600px;
+}
+.product-desc ul {
+  list-style: inside;
+}
+
+/* GAMBAR SAMPING */
+.product-title-side {
+  position: sticky;
+  top: 0; /* Membuat div kanan menempel di atas saat discroll */
+  display: none;
+  max-width: 500px;
+  min-width: 300px;
+  margin-left: 30px;
+  height: fit-content;
+}
+
+.color,
+.size {
+  width: 100%;
+  margin-top: 10px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.color > img {
+  width: 50px;
+  margin-right: 10px;
+}
+.colors {
+  display: none;
+}
+
+.size {
+  height: 40px;
+}
+.size div {
+  width: 75px;
+  border: 1px solid black;
+  text-align: center;
+  margin-right: 10px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.size .end {
+  margin-right: 0;
+}
+
+.size-chart {
+  float: right;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: underline;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Style untuk konten modal */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk tombol close */
+.close {
+  position: absolute;
+  top: 0;
+  right: 17px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+/* STYLE JUMLAH PRODUK */
+.jumlah {
+  margin-top: 10px;
+  width: 125px;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+.jumlah button {
+  display: inline-block;
+  width: 30px;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+.jumlah span {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+
+/* STYLE PILIHAN CHECKOUT */
+.market {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.market a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.market .keranjang {
+  background-color: lightgray;
+}
+.market .beli {
+  background-color: lightgray;
+}
+.market .tokopedia {
+  background-color: #1baa42;
+}
+.market .shopee {
+  background-color: #e34b29;
+}
+.market .whatsapp {
+  background-color: #008c71;
+}
+.market .tiktok {
+  background-color: #ff0064;
+}
+
+/* VIDEO PRODUK */
+.product-video {
+  margin-top: 50px;
+}
+/* OTHER PRODUCT */
+.other-product {
+  margin: 0 auto;
+  max-width: 1230px;
+  margin-top: 100px;
+}
+.etalase {
+  display: flex;
+  justify-content: space-between;
+}
+.etalase a {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  min-width: 125px;
+  width: 24%;
+}
+.etalase a img {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.etalase a h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.etalase a p {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.etalase a h4 {
+  margin-bottom: 2em;
+}
+.etalase a:hover {
+  border: 1px solid black;
+}
+
+.number-hover {
+  background-color: lightgray;
+}
+
+/* MEDIA */
+@media (min-width: 769px) {
+  .product-img,
+  .product-desc {
+    min-width: 280px;
+  }
+  .product-title {
+    display: none;
+  }
+  .product-title-side {
+    display: block;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-img,
+  .product-title-side {
+    padding-top: 80px;
+  }
+  .product-title {
+    margin-top: 20px;
+  }
+  .product-desc {
+    margin-top: 50px;
+  }
+  .price-1 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .size {
+    justify-content: space-between;
+  }
+  .size div {
+    width: 20%;
+  }
+  .size-chart {
+    margin: 0;
+  }
+
+  .other-product {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding-inline: 0;
+  }
+  .product-img {
+    padding-top: 27px;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .product-desc {
+    margin-top: 30px;
+  }
+  .img-side {
+    display: none;
+  }
+  .thumbnail {
+    margin: 0;
+    flex: 25%;
+  }
+  .main-img {
+    display: none;
+  }
+  .slider-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .slider-controls img {
+    width: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .slider-controls button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+
+  .main2 {
+    display: block;
+    margin: 0;
+    display: flex;
+    width: 400%; /* 4 gambar x 100% */
+    transition: transform 0.5s ease;
+  }
+
+  .colors {
+    display: block;
+    height: max-content;
+    width: 100%;
+    margin: 0;
+  }
+  .colors img {
+    width: 14%;
+    margin: 0;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 2px;
+  }
+
+  .product-video {
+    width: 100%;
+    height: 65vw;
+  }
+  .etalase {
+    flex-wrap: wrap;
+    max-width: 500px;
+  }
+  .etalase a {
+    width: 48%;
+    min-width: 100px;
+  }
+
+  header .container,
+  .product-title,
+  .product-desc,
+  .foot-top,
+  footer .container,
+  .other-product {
+    padding-inline: 5vw;
+  }
+}

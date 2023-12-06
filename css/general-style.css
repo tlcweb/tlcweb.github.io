@@ -1,0 +1,73 @@
+:root {
+  /* COLOR */
+  --white: #fff;
+  --gray: #ebebeb;
+  --gray-2: #919191;
+  --black: #000;
+
+  /* FONT SIZE */
+  --fs-1: 3rem;
+  --fs-2: 2rem;
+  --fs-3: 1.5rem;
+  --fs-4: 1.2rem;
+  --fs-5: 1rem;
+  --fs-6: 0.8rem;
+
+  /* FONT WEIGHT */
+  --fw-5: 500;
+  --fw-7: 700;
+  --fw-9: 900;
+
+  /* SHADOW */
+  --sd-1: 0 0.2px 3px black;
+  --sd-2: 1px 1px 3px black;
+}
+
+/* RESET */
+* {
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+body {
+  top: 0;
+}
+* a {
+  color: black;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+
+.container {
+  padding-inline: 5vw;
+  width: 100vw;
+}
+
+/* RESVONSIVE BREAKPOINT */
+@media (min-width: 769px) {
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}

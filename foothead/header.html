@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="css/foothead.css" />
+
+<header>
+  <div class="h-top">
+    <div class="container">
+      <a href="">Bantuan</a>
+      <a href="">Kontak</a>
+      <a href="">Indonesia</a>
+    </div>
+  </div>
+  <div class="h-bottom container">
+    <div class="menu-toggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="h-left">
+      <a href="index.html"><img src="img/logo.png" alt="Lavio" /></a>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="category/pria.html" class="navbar-link">PRIA</a>
+          </li>
+
+          <li>
+            <a href="category/wanita.html" class="navbar-link">WANITA</a>
+          </li>
+
+          <li>
+            <a href="category/brands.html" class="navbar-link">BRANDS</a>
+          </li>
+
+          <li>
+            <a href="category/cladico.html" class="navbar-link">CLADICO</a>
+          </li>
+
+          <li>
+            <a href="category/toko.html" class="navbar-link">TOKO</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="h-right">
+      <div class="search">
+        <input type="text" placeholder="Cari" autocomplete="off" class="search-field" />
+        <span><i class="bi bi-search"></i></span>
+      </div>
+      <h2>
+        <a href=""><i class="bi bi-cart2"></i></a>
+        <a href=""><i class="bi bi-person-circle"></i></a>
+      </h2>
+    </div>
+  </div>
+</header>
+
+<script>
+  const menuToggle = document.querySelector(".menu-toggle input");
+  const navbar = document.querySelector(".navbar ul");
+
+  menuToggle.addEventListener("click", function () {
+    navbar.classList.toggle("geser");
+  });
+</script>

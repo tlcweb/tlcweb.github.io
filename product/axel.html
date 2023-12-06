@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Lavio Cladico</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.png" />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../css/general-style.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <div id="header-container">
+      <!-- Konten header akan dimuat di sini -->
+    </div>
+
+    <!-- PRODUCT PAGE START-->
+    <section class="product-page container">
+      <div class="product-content">
+        <div class="product-img">
+          <div class="img-side">
+            <img class="thumbnail thumb" src="../img-product/axel/1.jpg" alt="Thumbnail 1" />
+            <img class="thumbnail thumb" src="../img-product/axel/2.jpg" alt="Thumbnail 2" />
+            <img class="thumbnail thumb" src="../img-product/axel/3.jpg" alt="Thumbnail 3" />
+            <img class="thumbnail thumb" src="../img-product/axel/4.jpg" alt="Thumbnail 4" />
+          </div>
+          <div class="main-img">
+            <img id="main" src="../img-product/axel/1.jpg" alt="Main Image" />
+          </div>
+          <div class="main2">
+            <img class="" src="../img-product/axel/1.jpg" alt="" />
+            <img class="" src="../img-product/axel/2.jpg" alt="" />
+            <img class="" src="../img-product/axel/3.jpg" alt="" />
+            <img class="" src="../img-product/axel/4.jpg" alt="" />
+            <img class="" src="../img-product/axel/5.jpg" alt="" />
+            <img class="" src="../img-product/axel/6.jpg" alt="" />
+            <img class="" src="../img-product/axel/7.jpg" alt="" />
+          </div>
+          <div class="slider-controls">
+            <button id="prev"><img src="../img/button/prev.png" alt="" /></button>
+            <button id="next"><img src="../img/button/next.png" alt="" /></button>
+          </div>
+        </div>
+        <div class="colors">
+          <img src="../img-product/axel/5.jpg" class="thumb1" alt="" />
+          <img src="../img-product/axel/6.jpg" class="thumb2" alt="" />
+          <img src="../img-product/axel/7.jpg" class="thumb3" alt="" />
+        </div>
+        <div class="product-title">
+          <h1>LAVIO AXEL</h1>
+          <p><a href="">Pria</a> - <a href="">Safety Boots</a></p>
+          <br />
+          <h2>RP 220.000 <span class="price-1">300.000</span></h2>
+          <br />
+          <div>
+            <p><span>Ukuran</span><span class="size-chart">Panduan Ukuran</span></p>
+            <div class="size">
+              <div class="number">39</div>
+              <div class="number">40</div>
+              <div class="number">41</div>
+              <div class="number">42</div>
+              <div class="number end">43</div>
+            </div>
+            <br />
+            <p>Jumlah</p>
+            <div class="jumlah j2">
+              <button onclick="kurangPesanan()">-</button>
+              <span id="">0</span>
+              <button onclick="tambahPesanan()">+</button>
+            </div>
+            <br /><br />
+            <div class="market">
+              <a href="" class="keranjang">Keranjang</a>
+              <a href="" class="beli">Beli</a>
+              <a href="" class="tokopedia">Tokopedia</a>
+              <a href="" class="shopee">Shopee</a>
+              <a href="" class="whatsapp">Whatsapp</a>
+              <a href="" class="tiktok">Tiktok Shop</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-desc">
+          <h3><b>Deskripsi Produk</b></h3>
+          <p>Lavio Axel - Sepatu safety terlaris yang cocok untuk hiking, touring, proyek, kerja lapangan, outdoor, dll. Hadir dengan design yang trendi dan cocok dipakai sehari-hari.</p>
+          <br />
+          <ul>
+            <li>Brand: Lavio</li>
+            <li>Material Up: Suede + Leather PU</li>
+            <li>Material Sol: Karet anti slip</li>
+            <li>Depan: Ujung besi perlindungan tambahan</li>
+            <li>Finishing: Rapih, kuat, dan nyaman dipakai</li>
+            <li>Dilengkapi jahitan sekeliling</li>
+            <li>Ukuran tersedia: 39-43</li>
+          </ul>
+          <br />
+          <p><b>Panduan Ukuran:</b></p>
+          <ul>
+            <li>39 = 24cm</li>
+            <li>40 = 25cm</li>
+            <li>41 = 26cm</li>
+            <li>42 = 27cm</li>
+            <li>43 = 28cm</li>
+          </ul>
+          <br />
+          <p>Ukuran 44-46 tersedia di etalase yang tepisah.</p>
+          <br />
+          <p><b>Pengiriman & Resi</b></p>
+          <p>
+            Pengiriman akan dilakukan Di hari yang SAMA Jika Transaksi Masuk Sebelum Jam 15:00 wib pada saat jam kerja senin-sabtu. TIDAK dihitung hari minggu atau libur nasional. Jika ada
+            keterlambatan akan kami konfirmasi segera.
+          </p>
+        </div>
+        <iframe
+          class="product-video"
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/nBcaorot8wQ?si=CTu7pB2UyAGGuUQ3"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="product-title-side">
+        <h1 class="product-name">LAVIO AXEL</h1>
+        <p class="product-category">Pria - Sepatu Safety</p>
+        <br />
+        <p class="price-1">RP 300.000</p>
+        <h3 class="price-2">RP 220.000</h3>
+        <br />
+        <div></div>
+        <p>Warna</p>
+        <div class="color">
+          <img src="../img-product/axel/5.jpg" class="thumb" alt="" />
+          <img src="../img-product/axel/6.jpg" class="thumb" alt="" />
+          <img src="../img-product/axel/7.jpg" class="thumb" alt="" />
+        </div>
+        <br />
+        <p>Ukuran</p>
+        <div class="size">
+          <div class="number">39</div>
+          <div class="number">40</div>
+          <div class="number">41</div>
+          <div class="number">42</div>
+          <div class="number end">43</div>
+        </div>
+        <p class="size-chart chart-2">Panduan Ukuran</p>
+        <br />
+        <br />
+        <p>Jumlah</p>
+        <div class="jumlah">
+          <button onclick="kurangPesanan()">-</button>
+          <span id="jumlah-pesanan">0</span>
+          <button onclick="tambahPesanan()">+</button>
+        </div>
+        <br />
+        <div class="market">
+          <a href="" class="keranjang" target="_blank">Keranjang</a>
+          <a href="" class="beli" target="_blank">Beli</a>
+          <a href="https://tokopedia.link/ynSwW4swODb" class="tokopedia" target="_blank">Tokopedia</a>
+          <a href="" class="shopee" target="_blank">Shopee</a>
+          <a href="https://wa.me/6282117591025" class="whatsapp" target="_blank">Whatsapp</a>
+          <a href="" class="tiktok" target="_blank">Tiktok Shop</a>
+        </div>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="../img-product/size-chart.png" alt="Size Chart" />
+        </div>
+      </div>
+    </section>
+    <!-- PRODUCT PAGE END-->
+
+    <!-- OTHER PRODUCT START-->
+    <section class="other-product container">
+      <h2>ANDA MUNGKIN JUGA MENYUKAI</h2>
+      <br />
+      <div class="etalase">
+        <a href="../product/gibson.html">
+          <img src="../img-product/gibson/1.jpg" alt="" />
+          <h3>LAVIO GIBSON</h3>
+          <p>Pria - Safety Boots</p>
+          <h4>RP 220.000 <span class="price-1">300.000</span></h4>
+        </a>
+        <a href="../product/galen.html">
+          <img src="../img-product/galen/1.jpg" alt="" />
+          <h3>LAVIO GALEN</h3>
+          <p>Pria - Safety Boots</p>
+          <h4>RP 220.000 <span class="price-1">300.000</span></h4>
+        </a>
+        <a href="../product/elektra.html">
+          <img src="../img-product/elektra/1.jpg" alt="" />
+          <h3>LAVIO ELEKTRA</h3>
+          <p>Pria - Safety Boots</p>
+          <h4>RP 220.000 <span class="price-1">300.000</span></h4>
+        </a>
+        <a href="../product/pascal.html">
+          <img src="../img-product/pascal/1.jpg" alt="" />
+          <h3>LAVIO PASCAL</h3>
+          <p>Pria - Safety Boots</p>
+          <h4>RP 220.000 <span class="price-1">300.000</span></h4>
+        </a>
+      </div>
+    </section>
+    <!-- OTHER PRODUCT END -->
+
+    <!-- FOOTER START-->
+    <div id="footer-container">
+      <!-- Konten header akan dimuat di sini -->
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="../foothead/foothead2.js"></script>
+    <script src="../javascript/product.js"></script>
+  </body>
+</html>
